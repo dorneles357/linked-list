@@ -1,6 +1,6 @@
-# 📈 Algebra Linear
+# 📈 Lista encadeada
 
-Uma biblioteca simples e modular em C para cálculos de algebra vetorial em um espaco de duas dimensão.
+Uma biblioteca simples e modular em C para estruturas de dados em Lista (simples, circular, duplamente encadeada).
 
 ## 📂 Estrutura do Projeto
 
