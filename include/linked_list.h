@@ -26,6 +26,19 @@ Node* createLinkedList();
  */
 void append(Node** head, int data);
 
+/** * @brief Liberar a memória alocada para a lista ligada.
+ * 
+ * @param head Ponteiro para o início da lista.
+ */
+void freeList(Node* head);
+
+/** * @brief Deletar um nó específico da lista ligada.
+ * 
+ * @param head Ponteiro para o ponteiro do início da lista.
+ * @param key Valor do nó a ser deletado.
+ */
+void deleteNode(Node** head, int key);
+
 /** * @brief Imprimir os elementos da lista ligada.
  * 
  * @param head Ponteiro para o início da lista.

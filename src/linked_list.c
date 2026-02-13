@@ -30,3 +30,33 @@ void printList(Node* head) {
         current = current->next;
     }
 }
+
+void freeList(Node* head) {
+    Node* current = head;
+    while (current != NULL) {
+        Node* temp = current;
+        current = current->next;
+        free(temp);
+        }
+}
+
+void deleteNode(Node** head, int key) {
+    Node* temp = *head;
+    Node* prev = NULL;
+
+    if (temp != NULL && temp->data == key) {
+        *head = temp->next; 
+        free(temp); 
+        return;
+    }
+
+    while (temp != NULL && temp->data != key) {
+        prev = temp;
+        temp = temp->next;
+    }
+
+    if (temp == NULL) return;
+
+    prev->next = temp->next;
+    free(temp);
+}
