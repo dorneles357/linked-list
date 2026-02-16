@@ -4,6 +4,8 @@
 int main() {
     Node* head = createLinkedList();
     printList(head);
+
+    printf("Appending nodes\n");
     append(&head, 1);
     append(&head, 2);
     append(&head, 3);
@@ -12,11 +14,8 @@ int main() {
     
     printList(head);
 
+    printf("Deleting node with value 3\n");
     deleteNode(&head, 3);
-    printf("After deleting node with value 3:\n");
-    printList(head);
-    freeList(head);
-    printf("After freeing the list:\n");
     printList(head);
 
     return 0;

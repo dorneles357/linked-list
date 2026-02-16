@@ -10,10 +10,7 @@
 
 /** * @brief Estrutura de um nó da lista ligada.
  */
-typedef struct Node {
-    int data;           /**< Dado armazenado no nó */
-    struct Node* next;  /**< Ponteiro para o próximo nó */
-} Node;
+typedef struct node Node;
 
 /** * @brief Criar uma lista ligada vazia.
  */
