@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include "linked_list.h"
 
-typedef struct node {
-    int data;           /**< Dado armazenado no nó */
-    struct node* next;  /**< Ponteiro para o próximo nó */
-} Node;
-
 Node* createLinkedList() {
     return NULL;
 }
